@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body_section{
+    width: 100%;
+    height: 100vh;
+    background-color: coral;
+    text-align: center;
+    overflow: auto;
+    position: relative;
+
+    h1{
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 4vh;
+        margin: 5rem 0 0 0;
+
+    }
+
+    .container{
+        width: 80%;
+        height: max-content;
+        // background-color: greenyellow;
+        padding: .5em;
+        display: grid;
+        place-items: center;
+        grid-gap: 1rem;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%);
+
+        .box1{
+            width: 100%;
+            height: max-content;
+            background-color: peachpuff;
+            padding: 0 .5rem ;
+            box-shadow: 1px 1px 4px rgba(2, 2, 2, .5);
+            border-radius: 15px;
+            
+
+            .Q_button{
+                width: 100%;
+                height: 6vh;
+                // background-color: red;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h3{
+                    font-family: cursive;
+                    font-weight: 400;
+                    font-size: 4vw;
+                    text-align: center;
+                }
+
+                .btn{
+                    font-size: 4vw;
+
+                    .fa-solid{
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            article{
+                width: 100%;
+                height: fit-content;
+                padding: 1.5rem .5rem;
+                display: none;
+
+                p{
+                    font-family: cursive;
+                    font-weight: 200;
+                    font-size: 3vw;
+                }
+            }
+
+            .article_display{
+                display: block;
+            }
+
+         
+        }
+    }
+
+    // media query
+    @media(min-width: 800px) {
+        .container{
+            width: 40%;
+            grid-gap: 3rem;
+
+            .box1{
+                border-radius: 15px;
+
+                .Q_button{
+                    margin: .27rem 0 0 0;
+                    padding: 0 3rem;
+                    height: 6vh;
+
+                    h3{
+                        font-size: 1.5vw;
+                    }
+
+                    .btn{
+                        font-size: 1.5vw;
+                    }
+                }
+
+                article{
+
+                    p{
+                        font-size: 1vw;
+                    }
+                }
+            }
+        }
+    }
+}
